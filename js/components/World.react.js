@@ -29,7 +29,7 @@ function getStyleClass(critter){
 }
 
 function getGeneration(critter){
-  if(!critter){
+  if(!critter || critter.originChar=='#'){
     return "";
   }
   return critter.generation;
@@ -71,7 +71,9 @@ var World=React.createClass({
       for(var j=0; j<row.length; j++){
         var key=i+'.'+j;
         var cn="space "+getStyleClass(row[j]);
-        line.push(<div key={key} className={cn}><span>{getGeneration(row[j])}</span></div>);
+        line.push(<div key={key} className={cn}>
+          <span>{getGeneration(row[j])}</span>
+        </div>);
       }
       lines.push(<div key={lineKey} className="line">{line}</div>)
     }
