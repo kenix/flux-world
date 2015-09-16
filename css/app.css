@@ -1,0 +1,45 @@
+.map{
+  width: 100%;
+  position: relative;
+}
+
+.line {
+  width: 420px;
+  position: relative;
+}
+
+.space {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  float: left;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.wall {
+  background-color: black;
+}
+
+.plant {
+  background-color: green;
+}
+
+.plantEater {
+  background-color: red;
+}
+
+.empty {
+  background-color: white;
+}
+
+.container {
+  border: solid 2px;
+  position: relative;
+}
+
+.row {
+  border: solid 2px;
+  border-color: red;
+  position: relative;
+}
