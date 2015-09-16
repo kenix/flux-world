@@ -8,13 +8,20 @@
   position: relative;
 }
 
+.line div {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .space {
   width: 15px;
   height: 15px;
   position: relative;
   float: left;
   background-color: grey;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 .wall {
